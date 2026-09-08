@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/Demo2/Indexx.html"
+    }
+  ]
+}
