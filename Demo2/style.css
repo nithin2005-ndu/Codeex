@@ -33,13 +33,8 @@
     border-radius: 4px;
 }
 
-/* Hide scrollbars for manual horizontal scrolling */
-.hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.hide-scrollbar::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 242, 254, 0.5);
 }
 
 /* Marquee Animation */

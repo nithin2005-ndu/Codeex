@@ -347,32 +347,32 @@
             </section>
             <!-- 4. OUR SERVICES -->
             <section class="w-full py-space-4xl bg-surface-container-lowest/80 border-y border-indigo-core/15 backdrop-blur-md overflow-hidden">
-                <div class="max-w-[1320px] mx-auto px-gutter-desktop mb-space-xl flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div class="max-w-[1320px] mx-auto px-gutter-desktop mb-space-2xl flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
                     <div>
                         <span
-                            class="font-label-eyebrow text-label-eyebrow text-cyan-glow uppercase tracking-widest font-semibold block mb-1">Our
+                            class="font-label-eyebrow text-label-eyebrow text-cyan-glow uppercase tracking-widest font-semibold">Our
                             Services</span>
-                        <h2 class="font-headline-lg text-headline-lg text-white">Web Development, UI/UX Design,
+                        <h2 class="font-headline-lg text-headline-lg text-white mt-1">Web Development, UI/UX Design,
                             Mobile Apps &amp; AI Solutions</h2>
                     </div>
-                    <!-- Manual Navigation Control Buttons -->
-                    <div class="flex items-center gap-3">
-                        <button id="services-prev" aria-label="Scroll Left" class="w-11 h-11 rounded-full bg-white/[0.05] border border-white/10 text-white hover:border-cyan-glow/60 hover:text-cyan-glow hover:bg-white/10 flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(0,0,0,0.4)]">
-                            <span class="material-symbols-outlined text-xl">arrow_back</span>
+                    <!-- Manual Horizontal Scroll Navigation Controls -->
+                    <div class="flex items-center gap-3 shrink-0">
+                        <button id="services-prev" aria-label="Previous Services" class="w-12 h-12 rounded-full bg-surface-container/90 border border-white/15 hover:border-cyan-glow text-white hover:text-cyan-glow flex items-center justify-center backdrop-blur-xl transition-all duration-300 shadow-lg hover:shadow-[0_0_25px_rgba(0,242,254,0.4)] active:scale-95 group cursor-pointer">
+                            <span class="material-symbols-outlined text-2xl group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
                         </button>
-                        <button id="services-next" aria-label="Scroll Right" class="w-11 h-11 rounded-full bg-white/[0.05] border border-white/10 text-white hover:border-cyan-glow/60 hover:text-cyan-glow hover:bg-white/10 flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_15px_rgba(0,0,0,0.4)]">
-                            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                        <button id="services-next" aria-label="Next Services" class="w-12 h-12 rounded-full bg-surface-container/90 border border-white/15 hover:border-cyan-glow text-white hover:text-cyan-glow flex items-center justify-center backdrop-blur-xl transition-all duration-300 shadow-lg hover:shadow-[0_0_25px_rgba(0,242,254,0.4)] active:scale-95 group cursor-pointer">
+                            <span class="material-symbols-outlined text-2xl group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- Auto Sliding & Drag-to-Scroll Services Cards Container -->
-                <div class="relative w-full py-space-sm group">
+                <!-- Sliding Services Cards Marquee with Manual Scroll Support -->
+                <div class="relative w-full overflow-hidden py-space-sm group">
                     <!-- Gradient Fade Edges -->
-                    <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#04050a] to-transparent z-20 pointer-events-none"></div>
-                    <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#04050a] to-transparent z-20 pointer-events-none"></div>
+                    <div class="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-[#04050a] to-transparent z-20 pointer-events-none"></div>
+                    <div class="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-[#04050a] to-transparent z-20 pointer-events-none"></div>
 
-                    <div id="services-scroll-container" class="overflow-x-auto hide-scrollbar scroll-smooth flex whitespace-nowrap gap-space-lg px-space-lg select-none cursor-grab active:cursor-grabbing">
+                    <div id="services-track" class="flex overflow-x-auto scrollbar-none scroll-smooth gap-space-lg px-space-lg cursor-grab active:cursor-grabbing select-none" style="scrollbar-width: none; -ms-overflow-style: none;">
                         <!-- SET 1 OF CARDS -->
                         <!-- Card 1: Web Dev -->
                         <div class="w-[340px] flex-shrink-0 whitespace-normal p-space-xl rounded-2xl bg-surface-container/90 border border-white/10 hover:border-cyan-glow/50 shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:shadow-[0_0_35px_rgba(0,242,254,0.3)] transition-all duration-300 backdrop-blur-xl interactive-glass-card group flex flex-col justify-between overflow-hidden">
@@ -411,11 +411,10 @@
                         </div>
 
                         <!-- Card 3: Mobile Apps -->
-                        <div class="w-[340px] flex-shrink-0 whitespace-normal p-space-xl rounded-2xl bg-surface-container/90 border border-white/10 hover:border-violet-accent/50 shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:shadow-[0_0_35px_rgba(139,92,246,0.3)] transition-all duration-300 backdrop-blur-xl interactive-glass-card group flex flex-col justify-between overflow-hidden">
+                        <div class="w-[340px] flex-shrink-0 whitespace-normal p-space-xl rounded-2xl bg-surface-container/90 border border-white/10 hover:border-violet-accent/50 shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:shadow-[0_0_35px_rgba(139,92,246,0.3)] transition-all duration-300 backdrop-blur-xl interactive-glass-card group flex flex-col justify-between">
                             <div>
-                                <div class="h-44 w-full mb-space-md rounded-xl overflow-hidden relative border border-white/10">
-                                    <img src="West Virginia Mobile App Development for Business Growth.jpg" alt="Mobile App Development" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                                    <div class="absolute inset-0 bg-gradient-to-t from-[#0e1322] via-transparent to-transparent opacity-60"></div>
+                                <div class="w-14 h-14 rounded-2xl bg-violet-accent/10 border border-violet-accent/30 text-violet-accent flex items-center justify-center mb-space-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-[0_0_20px_rgba(139,92,246,0.25)]">
+                                    <span class="material-symbols-outlined text-3xl">smartphone</span>
                                 </div>
                                 <h3 class="font-headline-sm text-headline-sm text-white mb-2 group-hover:text-violet-accent transition-colors">Mobile App Dev</h3>
                                 <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
@@ -551,11 +550,10 @@
                         </div>
 
                         <!-- Card 3: Mobile Apps -->
-                        <div class="w-[340px] flex-shrink-0 whitespace-normal p-space-xl rounded-2xl bg-surface-container/90 border border-white/10 hover:border-violet-accent/50 shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:shadow-[0_0_35px_rgba(139,92,246,0.3)] transition-all duration-300 backdrop-blur-xl interactive-glass-card group flex flex-col justify-between overflow-hidden">
+                        <div class="w-[340px] flex-shrink-0 whitespace-normal p-space-xl rounded-2xl bg-surface-container/90 border border-white/10 hover:border-violet-accent/50 shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:shadow-[0_0_35px_rgba(139,92,246,0.3)] transition-all duration-300 backdrop-blur-xl interactive-glass-card group flex flex-col justify-between">
                             <div>
-                                <div class="h-44 w-full mb-space-md rounded-xl overflow-hidden relative border border-white/10">
-                                    <img src="West Virginia Mobile App Development for Business Growth.jpg" alt="Mobile App Development" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                                    <div class="absolute inset-0 bg-gradient-to-t from-[#0e1322] via-transparent to-transparent opacity-60"></div>
+                                <div class="w-14 h-14 rounded-2xl bg-violet-accent/10 border border-violet-accent/30 text-violet-accent flex items-center justify-center mb-space-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-[0_0_20px_rgba(139,92,246,0.25)]">
+                                    <span class="material-symbols-outlined text-3xl">smartphone</span>
                                 </div>
                                 <h3 class="font-headline-sm text-headline-sm text-white mb-2 group-hover:text-violet-accent transition-colors">Mobile App Dev</h3>
                                 <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
@@ -874,77 +872,6 @@
             </div>
         </div>
         <script>
-            // Services Horizontal Scroll & Drag Functionality
-            const servicesContainer = document.getElementById('services-scroll-container');
-            const servicesPrevBtn = document.getElementById('services-prev');
-            const servicesNextBtn = document.getElementById('services-next');
-
-            if (servicesContainer) {
-                let isDown = false;
-                let startX;
-                let scrollLeft;
-                let autoScrollTimer = null;
-                let isInteracting = false;
-
-                const startAutoScroll = () => {
-                    if (autoScrollTimer) clearInterval(autoScrollTimer);
-                    autoScrollTimer = setInterval(() => {
-                        if (!isInteracting && !isDown) {
-                            servicesContainer.scrollLeft += 1.2;
-                            if (servicesContainer.scrollLeft >= (servicesContainer.scrollWidth - servicesContainer.clientWidth - 5)) {
-                                servicesContainer.scrollLeft = 0;
-                            }
-                        }
-                    }, 25);
-                };
-
-                startAutoScroll();
-
-                servicesContainer.addEventListener('mouseenter', () => isInteracting = true);
-                servicesContainer.addEventListener('mouseleave', () => {
-                    isInteracting = false;
-                    isDown = false;
-                });
-
-                // Mouse Drag to Scroll
-                servicesContainer.addEventListener('mousedown', (e) => {
-                    isDown = true;
-                    isInteracting = true;
-                    startX = e.pageX - servicesContainer.offsetLeft;
-                    scrollLeft = servicesContainer.scrollLeft;
-                });
-
-                servicesContainer.addEventListener('mouseup', () => {
-                    isDown = false;
-                    setTimeout(() => isInteracting = false, 1500);
-                });
-
-                servicesContainer.addEventListener('mousemove', (e) => {
-                    if (!isDown) return;
-                    e.preventDefault();
-                    const x = e.pageX - servicesContainer.offsetLeft;
-                    const walk = (x - startX) * 2;
-                    servicesContainer.scrollLeft = scrollLeft - walk;
-                });
-
-                // Prev / Next Control Buttons
-                if (servicesPrevBtn) {
-                    servicesPrevBtn.addEventListener('click', () => {
-                        isInteracting = true;
-                        servicesContainer.scrollBy({ left: -360, behavior: 'smooth' });
-                        setTimeout(() => isInteracting = false, 2000);
-                    });
-                }
-
-                if (servicesNextBtn) {
-                    servicesNextBtn.addEventListener('click', () => {
-                        isInteracting = true;
-                        servicesContainer.scrollBy({ left: 360, behavior: 'smooth' });
-                        setTimeout(() => isInteracting = false, 2000);
-                    });
-                }
-            }
-
             // Clean client-side interaction triggers
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -1170,6 +1097,102 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script for Manual & Auto Horizontal Scrolling Services Track -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('services-track');
+            const prevBtn = document.getElementById('services-prev');
+            const nextBtn = document.getElementById('services-next');
+
+            if (!track) return;
+
+            let autoScrollSpeed = 0.8;
+            let isPaused = false;
+            let pauseTimeout = null;
+            let isDragging = false;
+            let startX = 0;
+            let scrollLeftStart = 0;
+
+            function pauseAutoScroll(duration = 4000) {
+                isPaused = true;
+                if (pauseTimeout) clearTimeout(pauseTimeout);
+                pauseTimeout = setTimeout(() => {
+                    if (!isDragging) isPaused = false;
+                }, duration);
+            }
+
+            function autoScrollStep() {
+                if (!isPaused && !isDragging) {
+                    track.scrollLeft += autoScrollSpeed;
+                    const halfWidth = track.scrollWidth / 2;
+                    if (halfWidth > 0 && track.scrollLeft >= halfWidth) {
+                        track.scrollLeft -= halfWidth;
+                    }
+                }
+                requestAnimationFrame(autoScrollStep);
+            }
+
+            requestAnimationFrame(autoScrollStep);
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    pauseAutoScroll(5000);
+                    const cardWidth = 360;
+                    if (track.scrollLeft <= 0) {
+                        const halfWidth = track.scrollWidth / 2;
+                        track.scrollLeft += halfWidth;
+                    }
+                    track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    pauseAutoScroll(5000);
+                    const cardWidth = 360;
+                    const halfWidth = track.scrollWidth / 2;
+                    if (halfWidth > 0 && track.scrollLeft >= halfWidth) {
+                        track.scrollLeft -= halfWidth;
+                    }
+                    track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+                });
+            }
+
+            // Mouse Drag Control
+            track.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                pauseAutoScroll(10000);
+                startX = e.pageX - track.offsetLeft;
+                scrollLeftStart = track.scrollLeft;
+                track.style.scrollBehavior = 'auto';
+            });
+
+            window.addEventListener('mouseup', () => {
+                if (isDragging) {
+                    isDragging = false;
+                    track.style.scrollBehavior = 'smooth';
+                    pauseAutoScroll(3000);
+                }
+            });
+
+            track.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                e.preventDefault();
+                const x = e.pageX - track.offsetLeft;
+                const walk = (x - startX) * 1.5;
+                track.scrollLeft = scrollLeftStart - walk;
+            });
+
+            // Hover, Touch & Wheel listeners
+            track.addEventListener('mouseenter', () => pauseAutoScroll(10000));
+            track.addEventListener('mouseleave', () => {
+                if (!isDragging) pauseAutoScroll(2000);
+            });
+            track.addEventListener('touchstart', () => pauseAutoScroll(5000), { passive: true });
+            track.addEventListener('wheel', () => pauseAutoScroll(4000), { passive: true });
+        });
+    </script>
 </body>
 
 </html>
