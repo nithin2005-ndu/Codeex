@@ -1,0 +1,12 @@
+{
+  "name": "codeex-website",
+  "version": "1.0.0",
+  "description": "Codeex Official Website",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
